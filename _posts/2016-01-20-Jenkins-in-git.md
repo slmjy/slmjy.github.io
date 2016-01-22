@@ -10,6 +10,7 @@ comments: true
 In this post I will share my experience of cooking Jenkins, backed up by source sontrol configs, not UI.
 
 Diving into Jenkins it is usefull to know, that:
+
 * Jenkins was originally developed as the Hudson project in Sun Microsystems. Then it was forked in 2010. Hudson is an Oracle product, Jenkins - opensource. So don't get confused with Hudson namespace used in Jenkins.[^1]
 * Kohsuke Kawaguchi is creator and active developer of Jenkins
 * Jenkins was developed for Java originally
