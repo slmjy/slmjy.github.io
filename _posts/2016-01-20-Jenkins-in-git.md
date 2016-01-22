@@ -7,9 +7,17 @@ modified: 2016-01-20
 comments: true
 ---
 
+In this post I will share my experience of cooking Jenkins, backed up by source sontrol configs, not UI.
+
+Diving into Jenkins it is usefull to know, that:
+* Jenkins was originally developed as the Hudson project in Sun Microsystems. Then it was forked in 2010. Hudson is an Oracle product, Jenkins - opensource. So don't get confused with Hudson namespace used in Jenkins.[^1]
+* Kohsuke Kawaguchi is creator and active developer of Jenkins
+* Jenkins was developed for Java originally
+* CloudBees - SASS platform, based on Jenkins. It has some stuff, that is not opensourced.  Kohsuke Kawaguchi is a  Chief Technology Officer.
+
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
 
-[^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
+[^1]: <https://en.wikipedia.org/wiki/Jenkins_%28software%29>
 
 ### Pygments Code Blocks
 
