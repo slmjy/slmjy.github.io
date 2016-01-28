@@ -1,3 +1,12 @@
+---
+layout: post
+title: Choosing Mocking for .NET
+excerpt: "Choosing Mocking for .NET"
+tags: [.NET, C#, Mock, Unit Tests, Unit testing, Mocking]
+modified: 2015-12-21
+comments: true
+---
+
 First I have to say that the only major mocking library you should stay from is… Rhino Mocks. Because it is old. And abandoned.
 
 There was an attempt to resurrect it in 2014, and it failed, v4 is still in alpha! ([nuget](https://www.nuget.org/packages/RhinoMocks), [github](https://github.com/RhinoMocks/RhinoMocks) – look at the starts, activity and so on)
