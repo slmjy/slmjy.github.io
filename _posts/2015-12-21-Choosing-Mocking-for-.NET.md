@@ -6,6 +6,12 @@ tags: [.NET, C#, Mock, Unit Tests, Unit testing, Mocking]
 modified: 2015-12-21
 comments: true
 ---
+
+Statically-typed languages like C# offer developers benefits to build a solid and reliable design for all abstractions and if it compiles, it's already a half-way to be working. For other half of this road we need testing, and unlike manual or system testing in a specially prepared environment, developer can check a lot of stuff by writing atomic tests, called UnitTests, that do not require any envoronment or dependencies to execute and taht makes them fast and lightweight.  
+Imagine you test a class, interacting with a web-service. And you don't want to set-up this web-service to test your code, or you even cannot do that due to platform, time or security limitations. So you make a stupid version of this service api, that returns predefined data for that. That is called a *Stub*
+While writing tests against this *Stub* you add functionality to record, how many calls you received to a particular address, or what parameters were passed, Your Stub becomes a *Mock*  
+And following a golden DRY rool of programmers not to repeat themselves we come to a task of choosing a Mocking Framework, for which this article can be of help.
+
 ### obsoletion of **RhinoMocks** and mystery of **Microsoft Fake**
 * * * 
 First I have to say that the only major mocking library you should stay from is… a well known old-school Rhino Mocks. Because it is old in design and abandoned.  There was an attempt to resurrect it in 2014, and it seems to have failed. **v4** of RhinoMocks is still in alpha!  
@@ -39,12 +45,11 @@ Meet the competitors: <a href="https://github.com/FakeItEasy/FakeItEasy" class="
 
 ### introducing competitors
 
-##### [Moq](https://github.com/Moq/moq4) – open source, BSD license ( that means totally fine) _Stats:_ 1064 stars, 276 forks, 16.6 on nugetmusthaves, downloads: ~5M
-* I’ve used it a lot, it’s totally cool
-* [This MSDN article](https://msdn.microsoft.com/en-us/data/dn314429.aspx) recommends it for EF6
-##### [NSubstitute](https://github.com/nsubstitute/NSubstitute)  – open source, BSD license ( that means totally fine) _Stats:_ 536 stars, 123 forks, 12.7 on nugetmusthaves, downloads: ~700K
-
-##### [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)– open source, MIT license ( that means totally fine) _Stats:_ 462 stars, 96 forks, 8.2 on nugetmusthaves, downloads: ~300K
+* ##### [Moq](https://github.com/Moq/moq4) – open source, BSD license ( that means totally fine) _Stats:_ 1064 stars, 276 forks, 16.6 on nugetmusthaves, downloads: ~5M
+    * I’ve used it a lot, it’s totally cool
+    * [This MSDN article](https://msdn.microsoft.com/en-us/data/dn314429.aspx) recommends it for EF6
+* ##### [NSubstitute](https://github.com/nsubstitute/NSubstitute)  – open source, BSD license ( that means totally fine) _Stats:_ 536 stars, 123 forks, 12.7 on nugetmusthaves, downloads: ~700K 
+* ##### [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)– open source, MIT license ( that means totally fine) _Stats:_ 462 stars, 96 forks, 8.2 on nugetmusthaves, downloads: ~300K
 
 ### popularity
 
@@ -52,50 +57,33 @@ Meet the competitors: <a href="https://github.com/FakeItEasy/FakeItEasy" class="
 |:--------|:-------:|--------:|--------:|
 | Stars on GitHub | 1064 |536 | 462|
 | Forks                 | 276   | 123   | 96 |    
-| Nugetmusthaves score  | 96    | 12    | 8 |   
+| Nugetmusthaves score  | 16.6    | 12.7    | 8.2 |   
 | Downloads             | 5M    | 700K  | 300K | 
+| License | BSD | BSD | MIT |
 
 So clearly Moq is the most popular. And now about functionality
 
 ### functionality
 Many articles including [this answer from creator of FakeItEasy](http://stackoverflow.com/a/4174495) state that the major differences are not in functionality, but in syntax and approach.
 
+I am quite familiar with Moq only and love it. But actually the NSubstitute syntax I kind of like more, because you can mock methods without any lambdas. See the example:
 
-
-<td valign="top">
-
-_Syntax_
-
-</td>
-
-<td valign="top">
-
+{% highlight csharp %}
 var serverMoq = new Mock<IServerGateway>();
 
 serverMoq.Setup(server => server.HasUpgrades()).Returns(true);
+{% endhighlight %}
 
-</td>
-
-<td valign="top">
+{% highlight csharp %}
 
 var serverSubstitute = Substitute.For<IServerGateway>();
 
 serverSubstitute.HasUpgrades().Returns(true);
+{% endhighlight %}
 
-</td>
-
-<td valign="top">
+{% highlight csharp %}
 
 var serverFake = A.Fake<IServerGateway>();
 
 A.CallTo(() => serverFake.HasUpgrades()).Returns(true);
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-I am quite familiar with Moq only and love it. But actually the NSubstitute syntax I kind of like more, because you can mock methods without any lambdas
+{% endhighlight %}
