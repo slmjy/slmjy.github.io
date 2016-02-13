@@ -26,10 +26,11 @@ There is also some strange library from Microsoft, called [Fake](https://msdn.mi
 
 ### what to compare
 * * * 
-<div markdown="0"><a href="https://github.com/FakeItEasy/FakeItEasy" class="btn">FakeItEasy</a></div>
-<div markdown="0"><a href="https://github.com/Moq/moq4" class="btn btn-success">Moq</a></div>
-<div ><a href="https://github.com/nsubstitute/NSubstitute" class="btn btn-warning">NSubstitute</a></div>
+Meet the competitors: <a href="https://github.com/FakeItEasy/FakeItEasy" class="btn">FakeItEasy</a> 
+<a href="https://github.com/Moq/moq4" class="btn btn-success">Moq</a> 
+<a href="https://github.com/nsubstitute/NSubstitute" class="btn btn-warning">NSubstitute</a>
 
+#### the argumens for choosing those three were the following
 - They are actively developed
 - They are on GitHub and have MIT or BSD license
 - [Ninject](https://github.com/ninject/Ninject.MockingKernel) has extensions for these frameworks
@@ -38,25 +39,21 @@ There is also some strange library from Microsoft, called [Fake](https://msdn.mi
 
 ### introducing competitors
 
-1) [Moq](https://github.com/Moq/moq4) – open source, BSD license ( that means totally fine) _Stats:_ 1064 stars, 276 forks, 16.6 on nugetmusthaves, downloads: ~5M
+##### [Moq](https://github.com/Moq/moq4) – open source, BSD license ( that means totally fine) _Stats:_ 1064 stars, 276 forks, 16.6 on nugetmusthaves, downloads: ~5M
+* I’ve used it a lot, it’s totally cool
+* [This MSDN article](https://msdn.microsoft.com/en-us/data/dn314429.aspx) recommends it for EF6
+##### [NSubstitute](https://github.com/nsubstitute/NSubstitute)  – open source, BSD license ( that means totally fine) _Stats:_ 536 stars, 123 forks, 12.7 on nugetmusthaves, downloads: ~700K
 
-a. I’ve used it, it’s totally cool
-
-b. [This MSDN article](https://msdn.microsoft.com/en-us/data/dn314429.aspx) recommends it for EF6
-
-2) [NSubstitute](https://github.com/nsubstitute/NSubstitute) – open source, BSD license ( that means totally fine) _Stats:_ 536 stars, 123 forks, 12.7 on nugetmusthaves, downloads: ~700K
-
-3) [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)– open source, MIT license ( that means totally fine) _Stats:_ 462 stars, 96 forks, 8.2 on nugetmusthaves, downloads: ~300K
+##### [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)– open source, MIT license ( that means totally fine) _Stats:_ 462 stars, 96 forks, 8.2 on nugetmusthaves, downloads: ~300K
 
 ### popularity
-| *property* | [Moq](https://github.com/Moq/moq4) | [NSubstitute](https://github.com/nsubstitute/NSubstitute) | [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy) |
-| -
-|  Stars on GitHub      | 1064  | 536   | 462   |
-| Forks                 | 276   | 123   | 96    |
-| Nugetmusthaves score  | 96    | 12    | 8     |
-| Downloads             | 5M    | 700K  | 300K  |
-|=====
-| Foot1   | Foot2   | Foot3 | - |
+
+| *property* | [Moq](https://github.com/Moq/moq4) |   [NSubstitute](https://github.com/nsubstitute/NSubstitute)   |   [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy) |  
+|:--------|:-------:|--------:|--------:|
+| Stars on GitHub | 1064 |536 | 462|
+| Forks                 | 276   | 123   | 96 |    
+| Nugetmusthaves score  | 96    | 12    | 8 |   
+| Downloads             | 5M    | 700K  | 300K | 
 
 So clearly Moq is the most popular. And now about functionality
 
