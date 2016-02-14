@@ -43,7 +43,7 @@ Also [This nice article by *Jimmy Keen* ](http://jimmykeen.net/2014/12/13/mockin
 >       4. It is in alpha phase (since spring this year).
 
 
-#### Mystery of Microsoft **Fake**
+### Mystery of Microsoft **Fake**
 
 There is also some strange library from Microsoft, called [Fake](https://msdn.microsoft.com/en-us/library/hh549175.aspx), but for Visual Studio Enterprise only – WTF ?!! I should research it better
 
@@ -54,7 +54,8 @@ We will be comparing thees three frameworks:
 <a href="#moq" class="btn btn-success">Moq</a> 
 <a href="#nsubstitute" class="btn btn-warning">NSubstitute</a>
 
-#### the argumens for choosing those three were the following
+the argumens for choosing those three were the following
+---
 - They are actively developed
 - They are on GitHub and have MIT or BSD license
 - [Ninject](https://github.com/ninject/Ninject.MockingKernel) has extensions for these frameworks
