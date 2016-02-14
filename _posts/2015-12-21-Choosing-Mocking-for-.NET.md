@@ -45,11 +45,11 @@ Meet the competitors: <a href="https://github.com/FakeItEasy/FakeItEasy" class="
 
 ### introducing competitors
 
-* ##### [Moq](https://github.com/Moq/moq4) – open source, BSD license ( that means totally fine) _Stats:_ 1064 stars, 276 forks, 16.6 on nugetmusthaves, downloads: ~5M
+##### [Moq](https://github.com/Moq/moq4) – open source, BSD license ( that means totally fine) _Stats:_ 1064 stars, 276 forks, 16.6 on nugetmusthaves, downloads: ~5M
     * I’ve used it a lot, it’s totally cool
     * [This MSDN article](https://msdn.microsoft.com/en-us/data/dn314429.aspx) recommends it for EF6
-* ##### [NSubstitute](https://github.com/nsubstitute/NSubstitute)  – open source, BSD license ( that means totally fine) _Stats:_ 536 stars, 123 forks, 12.7 on nugetmusthaves, downloads: ~700K 
-* ##### [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)– open source, MIT license ( that means totally fine) _Stats:_ 462 stars, 96 forks, 8.2 on nugetmusthaves, downloads: ~300K
+##### [NSubstitute](https://github.com/nsubstitute/NSubstitute)  – open source, BSD license ( that means totally fine) _Stats:_ 536 stars, 123 forks, 12.7 on nugetmusthaves, downloads: ~700K 
+##### [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)– open source, MIT license ( that means totally fine) _Stats:_ 462 stars, 96 forks, 8.2 on nugetmusthaves, downloads: ~300K
 
 ### popularity
 
