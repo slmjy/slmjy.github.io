@@ -48,9 +48,9 @@ There is also some strange library from Microsoft, called [Fake](https://msdn.mi
 ### Meet competitors
 * * * 
 We will be comparing thees three frameworks:
-<a href="#FakeItEasy" class="btn">FakeItEasy</a> 
-<a href="#Moq" class="btn btn-success">Moq</a> 
-<a href="#NSubstitute" class="btn btn-warning">NSubstitute</a>
+<a href="#fakeiteasy" class="btn">FakeItEasy</a> 
+<a href="#moq" class="btn btn-success">Moq</a> 
+<a href="#nsubstitute" class="btn btn-warning">NSubstitute</a>
 
 #### the argumens for choosing those three were the following
 - They are actively developed
@@ -61,22 +61,26 @@ We will be comparing thees three frameworks:
 
 
 ##### Moq 
+
 Open source, BSD license ( that means totally fine) 
 * [Source code](https://github.com/Moq/moq4)
 * Stats: 1064 stars, 276 forks, 16.6 on nugetmusthaves, downloads: ~5M
     * I’ve used it a lot, it’s totally cool
     * [This MSDN article](https://msdn.microsoft.com/en-us/data/dn314429.aspx) recommends it for EF6
+    * 
 ##### NSubstitute
+
 * [Source code](https://github.com/nsubstitute/NSubstitute)
 * Stats: 536 stars, 123 forks, 12.7 on nugetmusthaves, downloads: ~700K 
-* 
+
 ##### FakeItEasy
+
 * [Source code](https://github.com/FakeItEasy/FakeItEasy)
 * Stats: 462 stars, 96 forks, 8.2 on nugetmusthaves, downloads: ~300K
 
 ### popularity
 
-| *property* | [Moq] | [NSubstitute] |  [FakeItEasy] |  
+| *property* | [Moq](#moq) | [NSubstitute](#nsubstitute) |  [FakeItEasy](#fakeiteasy) |  
 |:--------|:-------:|--------:|--------:|
 | Stars on GitHub | 1064 |536 | 462|
 | Forks                 | 276   | 123   | 96 |    
