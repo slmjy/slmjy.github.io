@@ -7,6 +7,16 @@ modified: 2015-12-21
 comments: true
 ---
 
+<section id="table-of-contents" class="toc">
+  <header>
+    <h3>Overview</h3>
+  </header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->
+
 Statically-typed languages like C# offer developers benefits to build a solid and reliable design for all abstractions and if it compiles, it's already a half-way to be working.  
 For other half of this road we need testing, and unlike manual or system testing in a specially prepared environment, developer can check a lot of stuff by writing atomic tests, called UnitTests, that do not require any envoronment or dependencies to execute and taht makes them fast and lightweight.  
 Imagine you test a class, interacting with a web-service. And you don't want to set-up this web-service to test your code, or you even cannot do that due to platform, time or security limitations. So you make a stupid version of this service api, that returns predefined data for that.  
@@ -17,7 +27,7 @@ Your Stub becomes a *Mock*
 And following a golden DRY rool of programmers not to repeat themselves we come to a task of choosing a Mocking Framework, for which this article can be of help.
 
 ### obsoletion of **RhinoMocks** and mystery of **Microsoft Fake**
-* * * 
+
 First I have to say that the only major mocking library you should stay from is… a well known old-school Rhino Mocks. Because it is old in design and abandoned.  There was an attempt to resurrect it in 2014, and it seems to have failed. **v4** of RhinoMocks is still in alpha!  
 {: .notice}
 
@@ -25,6 +35,7 @@ First I have to say that the only major mocking library you should stay from is�
 * [RhinoMocks GitHub](https://github.com/RhinoMocks/RhinoMocks) – look at the starts and activity
 
 Also [This nice article by *Jimmy Keen* ](http://jimmykeen.net/2014/12/13/mocking-frameworks-comparison/) - a guy with very high rep on StackOverflow for topics on UnitTesting states that you should not use RhinoMocks anymore:
+
 >   Which framework you should stay away from? - RhinoMocks. Why?  
 >       1. Its API is old, unpleasant and undocumented. It will make learning (it) harder and your tests will be more difficult to follow.  
 >       2. It is no longer actively developed (regardless of recent attempts).  
@@ -34,9 +45,10 @@ Also [This nice article by *Jimmy Keen* ](http://jimmykeen.net/2014/12/13/mockin
 #### mystery of Microsoft **Fake**
 There is also some strange library from Microsoft, called [Fake](https://msdn.microsoft.com/en-us/library/hh549175.aspx), but for Visual Studio Enterprise only – WTF ?!! I should research it better
 
-### what to compare
+### Meet competitors
 * * * 
-Meet the competitors: <a href="#FakeItEasy" class="btn">FakeItEasy</a> 
+We will be comparing thees three frameworks:
+<a href="#FakeItEasy" class="btn">FakeItEasy</a> 
 <a href="#Moq" class="btn btn-success">Moq</a> 
 <a href="#NSubstitute" class="btn btn-warning">NSubstitute</a>
 
@@ -46,6 +58,7 @@ Meet the competitors: <a href="#FakeItEasy" class="btn">FakeItEasy</a>
 - [Ninject](https://github.com/ninject/Ninject.MockingKernel) has extensions for these frameworks
 - Already mentioned above [article by *Jimmy Keen*](http://jimmykeen.net/2014/12/13/mocking-frameworks-comparison/)
 - Scores on [nugetmusthaves.com](http://nugetmusthaves.com/Tag/mocking)
+
 
 ##### Moq 
 Open source, BSD license ( that means totally fine) 
