@@ -17,14 +17,25 @@ comments: true
 </div>
 </section><!-- /#table-of-contents -->
 
+About mocking
+---
+
 Statically-typed languages like C# offer developers benefits to build a solid and reliable design for all abstractions and if it compiles, it's already a half-way to be working.  
-For other half of this road we need testing, and unlike manual or system testing in a specially prepared environment, developer can check a lot of stuff by writing atomic tests, called UnitTests, that do not require any envoronment or dependencies to execute and taht makes them fast and lightweight.  
-Imagine you test a class, interacting with a web-service. And you don't want to set-up this web-service to test your code, or you even cannot do that due to platform, time or security limitations. So you make a stupid version of this service api, that returns predefined data for that.  
+
+For other half of this road we need testing, and unlike manual or system testing in a specially prepared environment, developer can check a lot of stuff by writing atomic tests, called UnitTests, that do not require any envoronment or dependencies to execute and taht makes them fast and lightweight. 
+
+Imagine you test a class, interacting with a web-service. And you don't want to set-up this web-service to test your code, or you even cannot do that due to platform, time or security limitations. So you make a stupid version of this service api, that returns predefined data for that.
+
 That is called a *Stub*  
+
 While writing tests against this *Stub* you add functionality to record, how many calls you received to a particular address, or what parameters were passed, 
+
 Your Stub becomes a *Mock*  
 
 And following a golden DRY rool of programmers not to repeat themselves we come to a task of choosing a Mocking Framework, for which this article can be of help.
+
+What not to compare
+---
 
 ### Obsoletion of **RhinoMocks**
 
@@ -47,7 +58,9 @@ Also [This nice article by *Jimmy Keen* ](http://jimmykeen.net/2014/12/13/mockin
 
 There is also some strange library from Microsoft, called [Fake](https://msdn.microsoft.com/en-us/library/hh549175.aspx), but for Visual Studio Enterprise only – WTF ?!! I should research it better
 
-### Meet competitors
+Meet competitors
+---
+
 * * * 
 We will be comparing thees three frameworks:
 <a href="#fakeiteasy" class="btn">FakeItEasy</a> 
@@ -80,6 +93,9 @@ Open source, BSD license ( that means totally fine)
 
 * [Source code](https://github.com/FakeItEasy/FakeItEasy)
 * Stats: 462 stars, 96 forks, 8.2 on nugetmusthaves, downloads: ~300K
+
+Comparision
+---
 
 ### Popularity
 
@@ -118,4 +134,5 @@ var serverFake = A.Fake<IServerGateway>();
 A.CallTo(() => serverFake.HasUpgrades()).Returns(true);
 {% endhighlight %}
 
-### Conclusions
+Conclusions
+---
