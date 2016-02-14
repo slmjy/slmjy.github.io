@@ -26,7 +26,7 @@ Your Stub becomes a *Mock*
 
 And following a golden DRY rool of programmers not to repeat themselves we come to a task of choosing a Mocking Framework, for which this article can be of help.
 
-### obsoletion of **RhinoMocks** and mystery of **Microsoft Fake**
+### Obsoletion of **RhinoMocks**
 
 First I have to say that the only major mocking library you should stay from is… a well known old-school Rhino Mocks. Because it is old in design and abandoned.  There was an attempt to resurrect it in 2014, and it seems to have failed. **v4** of RhinoMocks is still in alpha!  
 {: .notice}
@@ -42,7 +42,9 @@ Also [This nice article by *Jimmy Keen* ](http://jimmykeen.net/2014/12/13/mockin
 >       3. It is one-man show (who might get bored and leave at some point).  
 >       4. It is in alpha phase (since spring this year).
 
-#### mystery of Microsoft **Fake**
+
+#### Mystery of Microsoft **Fake**
+
 There is also some strange library from Microsoft, called [Fake](https://msdn.microsoft.com/en-us/library/hh549175.aspx), but for Visual Studio Enterprise only – WTF ?!! I should research it better
 
 ### Meet competitors
@@ -60,25 +62,25 @@ We will be comparing thees three frameworks:
 - Scores on [nugetmusthaves.com](http://nugetmusthaves.com/Tag/mocking)
 
 
-##### Moq 
+#### Moq 
 
 Open source, BSD license ( that means totally fine) 
 * [Source code](https://github.com/Moq/moq4)
 * Stats: 1064 stars, 276 forks, 16.6 on nugetmusthaves, downloads: ~5M
     * I’ve used it a lot, it’s totally cool
     * [This MSDN article](https://msdn.microsoft.com/en-us/data/dn314429.aspx) recommends it for EF6
-    * 
-##### NSubstitute
+
+#### NSubstitute
 
 * [Source code](https://github.com/nsubstitute/NSubstitute)
 * Stats: 536 stars, 123 forks, 12.7 on nugetmusthaves, downloads: ~700K 
 
-##### FakeItEasy
+#### FakeItEasy
 
 * [Source code](https://github.com/FakeItEasy/FakeItEasy)
 * Stats: 462 stars, 96 forks, 8.2 on nugetmusthaves, downloads: ~300K
 
-### popularity
+### Popularity
 
 | *property* | [Moq](#moq) | [NSubstitute](#nsubstitute) |  [FakeItEasy](#fakeiteasy) |  
 |:--------|:-------:|--------:|--------:|
@@ -90,7 +92,7 @@ Open source, BSD license ( that means totally fine)
 
 So clearly Moq is the most popular. And now about functionality
 
-### functionality
+### Functionality
 Many articles including [this answer from *creator of FakeItEasy*](http://stackoverflow.com/a/4174495) states that the major differences are not in functionality, but in syntax and approach.
 
 I am quite familiar with Moq only and love it. But actually the NSubstitute syntax I kind of like more, because you can mock methods without any lambdas. See the example:
@@ -114,3 +116,5 @@ var serverFake = A.Fake<IServerGateway>();
 
 A.CallTo(() => serverFake.HasUpgrades()).Returns(true);
 {% endhighlight %}
+
+### Conclusions
